@@ -39,9 +39,9 @@ namespace CoronaStatsBot
 			var tbodyNode = tableNode.SelectSingleNode("tbody");
 			var trNodes = tbodyNode.ChildNodes.Where(x => x.Name == "tr");
 
-			var statsByCountry = GetStatsByCountry(trNodes.Skip(1).Select(x => x.InnerText))
+			var statsByCountry = GetStatsByCountry(trNodes.Select(x => x.InnerText))
 				.OrderByDescending(x => x.NewDeaths)
-				.Take(20);
+				.Take(21);
 
 			return string.Join('\n', statsByCountry.Select(x => $"{x.NewDeaths} ({x.Name} | {x.TotalCases})"));
 		}
