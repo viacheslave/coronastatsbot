@@ -1,2 +1,5 @@
 # coronastatsbot
-Reports COVID-19 stats thru Telegram
+Reports COVID-19 Top 20 stats thru Telegram.
+
+Uses https://www.worldometers.info/coronavirus/ 
+ 
