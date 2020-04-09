@@ -5,3 +5,5 @@
 /src/CoronaStatsBot/obj/
 /src/CoronaStatsBot/**/*.user
 /src/CoronaStatsBot/.vs
+/src/**/bin/
+/src/**/obj/
