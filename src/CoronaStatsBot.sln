@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoronaStatsBot", "CoronaStatsBot.csproj", "{0853EE5D-80A7-4419-AE1D-0E8AE5635440}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoronaStatsBot", "CoronaStatsBot\CoronaStatsBot.csproj", "{0853EE5D-80A7-4419-AE1D-0E8AE5635440}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoronaStatsBot.Tests", "..\CoronaStatsBot.Tests\CoronaStatsBot.Tests.csproj", "{0FF8D516-D2AB-4073-BAC0-9452EED93B4D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoronaStatsBot.Tests", "CoronaStatsBot.Tests\CoronaStatsBot.Tests.csproj", "{0FF8D516-D2AB-4073-BAC0-9452EED93B4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoronaStatsBot.Data", "..\CoronaStatsBot.Data\CoronaStatsBot.Data.csproj", "{5930888E-0DC0-411B-9A5C-288A71F15EA3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoronaStatsBot.Data", "CoronaStatsBot.Data\CoronaStatsBot.Data.csproj", "{5930888E-0DC0-411B-9A5C-288A71F15EA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

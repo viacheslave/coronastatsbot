@@ -26,7 +26,18 @@ namespace CoronaStatsBot
 
 		private static string Format(IEnumerable<CountryStats> data)
 		{
-			return string.Join('\n', data.Select(x => $"{x.NewDeaths:n0} :: {x.TotalDeaths:n0} ({x.Name} | {x.TotalCases:n0})"));
+			var collection = new List<string> { Format(data.First()), string.Empty };
+			collection.AddRange(data.Skip(1).Select(Format));
+
+			return string.Join('\n', collection);
+
+			static string Format(CountryStats x)
+			{
+				return
+					$"{x.TotalCases:n0} :: +{x.NewCases:n0} - " +
+					$"{x.Name} - " +
+					$"{x.TotalDeaths:n0} :: +{x.NewDeaths:n0}";
+			}
 		}
 	}
 }

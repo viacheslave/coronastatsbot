@@ -24,7 +24,7 @@ namespace CoronaStatsBot.Data
 
 			var statsByCountry = GetStatsByCountry(trNodes.Select(x => x.InnerText))
 				.Skip(7)
-				.OrderByDescending(x => x.NewDeaths)
+				.OrderByDescending(x => x.TotalCases)
 				.Take(21);
 
 			return statsByCountry;
